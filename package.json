@@ -4,13 +4,20 @@
     "lint": "eslint --ext .jsx resources/assets"
   },
   "devDependencies": {
+    "babel-core": "^6.8.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
     "eslint": "^2.9.0",
     "eslint-config-airbnb": "^7.0.0",
     "eslint-config-airbnb-base": "^2.0.0",
     "eslint-plugin-import": "^1.7.0",
     "eslint-plugin-jsx-a11y": "^0.6.2",
     "eslint-plugin-react": "^4.3.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "webpack": "^1.13.0"
   },
   "dependencies": {
     "laravel-elixir": "^5.0.0",
