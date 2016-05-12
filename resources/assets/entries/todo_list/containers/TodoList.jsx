@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { addTodo } from '../../../actions/todo_list';
+import { addTodo } from 'actions/todo_list';
 
-import Todo from '../components/Todo.jsx';
-import TodoAddForm from '../components/TodoAddForm.jsx';
+import Todo from 'entries/todo_list/components/Todo.jsx';
+import TodoAddForm from 'entries/todo_list/components/TodoAddForm.jsx';
 
 class TodoList extends React.Component {
   render() {

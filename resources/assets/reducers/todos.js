@@ -1,4 +1,4 @@
-import { TODO_LIST } from '../constants';
+import { TODO_LIST } from 'constants';
 
 const todos = (state = [], action) => {
   switch (action.type) {
