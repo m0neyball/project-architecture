@@ -4,10 +4,10 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 
 // reducers
-import todos from '../../reducers/todos';
+import todos from 'reducers/todos';
 
 // containers
-import TodoList from './containers/TodoList.jsx';
+import TodoList from 'entries/todo_list/containers/TodoList.jsx';
 
 const rootReducer = combineReducers({
   todos

@@ -1,4 +1,4 @@
-import { TODO_LIST } from '../constants';
+import { TODO_LIST } from 'constants';
 
 let nextTodoId = 0;
 
