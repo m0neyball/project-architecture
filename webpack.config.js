@@ -1,6 +1,7 @@
 module.exports = {
   entry: {
-    welcome: './resources/assets/entries/welcome/index.jsx'
+    welcome: './resources/assets/entries/welcome/index.jsx',
+    todo_list: './resources/assets/entries/todo_list/index.jsx'
   },
   output: {
     path: './public/build',
