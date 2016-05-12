@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
   entry: {
     welcome: './resources/assets/entries/welcome/index.jsx',
@@ -18,5 +20,15 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    root: __dirname,
+    alias: {
+      actions: path.join(__dirname, 'resources', 'assets', 'actions'),
+      components: path.join(__dirname, 'resources', 'assets', 'components'),
+      constants: path.join(__dirname, 'resources', 'assets', 'constants'),
+      entries: path.join(__dirname, 'resources', 'assets', 'entries'),
+      reducers: path.join(__dirname, 'resources', 'assets', 'reducers'),
+    }
   }
 };
