@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .jsx resources/assets",
+    "lint": "eslint --ext .jsx --ext .js resources/assets",
     "build": "webpack --progress --colors",
     "build:watch": "npm run build -- --watch"
   },
@@ -17,6 +17,7 @@
     "eslint-plugin-jsx-a11y": "^0.6.2",
     "eslint-plugin-react": "^4.3.0",
     "gulp": "^3.9.1",
+    "key-mirror-nested": "^1.2.4",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-redux": "^4.4.5",
