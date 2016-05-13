@@ -1,12 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { addTodo } from 'actions/todo_list';
+import { addTodo, loadTodos } from 'actions/todo_list';
 
 import Todo from 'entries/todo_list/components/Todo.jsx';
 import TodoAddForm from 'entries/todo_list/components/TodoAddForm.jsx';
 
 class TodoList extends React.Component {
+  componentDidMount() {
+    this.props.onLoadTodos();
+  }
   render() {
     const { onAddTodoClick } = this.props;
     return (
@@ -42,6 +45,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   const result = {
+    onLoadTodos: () => {
+      dispatch(loadTodos());
+    },
     onAddTodoClick: (text) => {
       dispatch(addTodo(text));
     }
