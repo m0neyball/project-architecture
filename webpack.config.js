@@ -28,6 +28,7 @@ module.exports = {
       components: path.join(__dirname, 'resources', 'assets', 'components'),
       constants: path.join(__dirname, 'resources', 'assets', 'constants'),
       entries: path.join(__dirname, 'resources', 'assets', 'entries'),
+      middlewares: path.join(__dirname, 'resources', 'assets', 'middlewares'),
       reducers: path.join(__dirname, 'resources', 'assets', 'reducers'),
     }
   }
