@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/todo-list', function () {
     return view('todo_list');
 });
+
+Route::resource('todo', 'TodoController',
+    ['only' => ['index', 'store']]);
